@@ -77,23 +77,26 @@
 				</div>
 				<div class="span6">
 					<div>
-						<ul class ="nav nav-tabs" id = "main">
-							<li class="active"><a id="nav_home" href="/"> Home </a></li>
-							<li><a id="nav_course" href="#course"> 課程專區 </a></li>
-							<li><a id="nav_speech" href="#speech"> 演講專區 </a></li>
-							<li><a id="nav_opinion" href="#opinion"> 意見回饋 </a></li>
-						</ul>
-						<div class="tab-content">
-							<div id="course" class="tab-pane fade">
-								dd
-							</div>
-							<div id="speech" class="tab-pane fade">
-								xx
-							</div>
-							<div id="opinion" class="tab-pane fade">
-								ss
+						<!-- start 中間分頁區塊 -->
+						<div class="tabbable"> <!-- Only required for left/right tabs -->
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#course" data-toggle="tab">課程專區</a></li>
+								<li><a href="#speech" data-toggle="tab">演講專區</a></li>
+								<li><a href="#opinion" data-toggle="tab">意見回饋</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="course">
+									<p>I'm in Section 1.</p>
+								</div>
+								<div class="tab-pane" id="speech">
+									<p>Howdy, I'm in Section 2.</p>
+								</div>
+								<div class="tab-pane" id="opinion">
+									<p>Howdy, I'm in Section 3.</p>
+								</div>
 							</div>
 						</div>
+						<!-- end 中間分頁區塊 -->
 					</div>
 				</div>
 				<div class="span3">	
