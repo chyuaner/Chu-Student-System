@@ -2,7 +2,7 @@
 <html lang="zh-tw">
 <head>
 	<meta charset="utf-8">
-	<title>CHU中華大學選課</title>
+	<title>中華大學資訊服務系統</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -11,14 +11,14 @@
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<!--<link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />-->
 	<link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-<!--
-	<link href="assets/Flat/css/bootstrap.css" rel="stylesheet" />
-	<link href="assets/Flat/css/flat-ui.css" rel="stylesheet" />
--->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<style>
-	body {
-		/*padding-top: 60px;*/ /* 60px to make the container go all the way to the bottom of the topbar */
+	.form-signin {
+		background-color: #E5E5E5;
+		border: 1px solid #E5E5E5;
+		border-radius: 15px 15px 15px 15px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+		padding: 5% 20%;
 	}
 	</style>
 </head>
@@ -27,7 +27,7 @@
 		<div class="navbar-inner">
 			<div class="container">
 				
-				<a class="brand" href="#">CHU學生模擬系統</a>
+				<a class="brand" href="#">CHUST學生資訊系統</a>
 				<div class="nav-collapse collapse">
 					<ul class="nav">
 						<li class="active">
@@ -49,7 +49,12 @@
 						</li>
 						<li>
 							<a href="#">
-								<i class="icon-ok"></i>成就達成
+								<i class="icon-ok"></i>網路選課行事曆
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-envelope"></i>網頁信箱
 							</a>
 						</li>
 					</ul>
@@ -65,42 +70,37 @@
 	<div id="page">	
 		<div id="wrapper" class="container">
 			<div class="row">
+				<!-- 網站導覽 -->
 				<div class="span12">
 					<div class="breadcrumb">home</div>
 				</div>
+				<!-- end 網站導覽 -->
+				
+				<!-- 公告區 -->
 				<div class="span3">
 					<div class="well">
-						123
-					</div>
-					
-					
+						<section id="announcement">
+							<h2>公告</h2>
+						</section>
+					</div>	
 				</div>
+				<!-- end 公告區 -->
 				<div class="span6">
-					<div>
-						<!-- start 中間分頁區塊 -->
-						<div class="tabbable"> <!-- Only required for left/right tabs -->
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#course" data-toggle="tab">課程專區</a></li>
-								<li><a href="#speech" data-toggle="tab">演講專區</a></li>
-								<li><a href="#opinion" data-toggle="tab">意見回饋</a></li>
-							</ul>
-							<div class="tab-content">
-								<div class="tab-pane active" id="course">
-									<h3>課程專區</h3>
-									<p>I'm in Section 1.</p>
-								</div>
-								<div class="tab-pane" id="speech">
-									<h3>演講專區</h3>
-									<p>Howdy, I'm in Section 2.</p>
-								</div>
-								<div class="tab-pane" id="opinion">
-									<h3>意見回饋</h3>
-									<p>Howdy, I'm in Section 3.</p>
-								</div>
-							</div>
-						</div>
-						<!-- end 中間分頁區塊 -->
-					</div>
+					<!-- 中間分頁區塊 -->
+					<section>
+						
+						<form class="form-signin" name="form_signin" accept-charset="utf-8" method="post" action="#" style="top: 20%; opacity: 1;">
+							<h3>學生資訊系統登入</h3>
+							<span></span>
+							<input class="input-block-level" type="text" placeholder="Student ID" style="height: 20px" value="" name="id">
+							<input class="input-block-level" type="password" placeholder="Password" style="height: 20px" name="password">
+							<button class="btn-primary" type="submit">登入系統</button>
+							<button class="btn-primary" type="submit">使用說明</button>
+							<button class="btn-primary" type="submit">密碼查詢</button>
+						</form>
+						
+					</section>
+					<!-- end 中間分頁區塊 -->
 				</div>
 				<div class="span3">	
 					<div class="well">				
